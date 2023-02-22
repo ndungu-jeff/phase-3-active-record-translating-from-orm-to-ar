@@ -28,6 +28,7 @@ describe "Dog" do
     end
   end
 
+   
   describe '.save' do
     it 'saves an instance of the dog class to the database and then sets the given dogs `id` attribute' do
       dog = Dog.new(name: "Fido", breed: "lab")
@@ -70,5 +71,7 @@ describe "Dog" do
       expect(teddy_from_db).to be_an_instance_of(Dog)
     end
   end
+
+ 
 
 end
